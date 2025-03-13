@@ -7,7 +7,7 @@ public class WeightConversion {
         int option;
         double weight;
         double result;
-        
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Weight Coversion Choose a option");
         System.out.println("Option 1: convert lbs to kgs");
@@ -20,14 +20,14 @@ public class WeightConversion {
             System.out.print("Enter lbs: ");
             weight = scanner.nextDouble();
             result = weight * 0.453592;
-            System.out.printf("Result : %.2f Kgs" , result);
+            System.out.printf("Result : %.2f Kgs", result);
 
-        }else if (option == 2) {
+        } else if (option == 2) {
             System.out.print("Enter kgs: ");
             weight = scanner.nextDouble();
             result = weight * 2.2046;
-            System.out.printf("Result : %.2f Lbs" , result);
-        }else{
+            System.out.printf("Result : %.2f Lbs", result);
+        } else {
             System.out.println("Invalid option");
         }
 
