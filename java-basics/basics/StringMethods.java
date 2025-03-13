@@ -20,26 +20,25 @@ public class StringMethods {
         System.out.println(name);
         System.out.println(letter);
         System.out.println(length);
-        
+
         /*
-        if(name.isEmpty()){
-            System.out.println("Your name is empy");
-        }else{
-            System.out.println("hello " + name);
-        }
-      
+         * if(name.isEmpty()){
+         * System.out.println("Your name is empy");
+         * }else{
+         * System.out.println("hello " + name);
+         * }
+         * 
+         * 
+         * if(name.contains(" ")){
+         * System.out.println("name contains empty space");
+         * }else{
+         * System.out.println("your name DOSET contain blank");
+         * }
+         */
 
-        if(name.contains(" ")){
-            System.out.println("name contains empty space");
-        }else{
-            System.out.println("your name DOSET contain blank");
-        }
-        */
-
-
-        if(name.equals("dheeraj")){
+        if (name.equals("dheeraj")) {
             System.out.println("name cannot be password");
-        }else{
+        } else {
             System.out.println("your name is  " + name);
         }
 
