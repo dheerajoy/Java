@@ -10,6 +10,7 @@ public class SlotMachine {
         int bet;
         int payOut;
         String[] row;
+        String playAgain;
 
         // display welcome message
         System.out.println("------------------------");
@@ -23,6 +24,7 @@ public class SlotMachine {
             System.out.println("current balance : $" + balance);
             System.out.print("Place your bet amount : ");
             bet = scanner.nextInt();
+            scanner.nextLine();
 
             // verify if bet > balance
             // verfiy if bet > 0
@@ -50,8 +52,19 @@ public class SlotMachine {
             } else {
                 System.out.println("Sorry you lost this round");
             }
+
+            System.out.print("Do you want to continue (y / n) : ");
+            playAgain = scanner.nextLine().toLowerCase();
+
+            if (!playAgain.equals("y")) {
+                break;
+            }
         }
 
+        System.out.println("------------------------");
+        System.out.println("Game Over");
+        System.out.println("Balance Amount : " + balance);
+        System.out.println("------------------------");
         scanner.close();
     }
 
