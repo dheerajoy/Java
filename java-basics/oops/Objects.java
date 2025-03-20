@@ -52,6 +52,42 @@ class Student {
 }
 
 /*
+ * Overloaded Constructor - Allow a class to have multiple constructors with
+ * different parameters list
+ * Enables Object to be initialized in various ways
+ */
+
+class Users {
+    String userName;
+    String email;
+    int age;
+
+    Users() {
+        this.userName = "GuestUser";
+        this.email = "Not provided";
+        this.age = 0;
+    }
+
+    Users(String userName) {
+        this.userName = userName;
+        this.email = "Not provided";
+        this.age = 0;
+    }
+
+    Users(String userName, String email) {
+        this.userName = userName;
+        this.email = email;
+        this.age = 0;
+    }
+
+    Users(String userName, String email, int age) {
+        this.userName = userName;
+        this.email = email;
+        this.age = age;
+    }
+}
+
+/*
  * Object - an Entity that holds data (attributes) and can perform actions
  * (methods)
  * its a Reference data type
@@ -70,5 +106,20 @@ public class Objects {
         System.out.println(student1.isRegistered);
         student1.studying();
 
+        Users user1 = new Users("Spongbob");
+        Users user2 = new Users("patick", "pStart.yahoo.com", 23);
+        Users user3 = new Users();
+
+        System.out.println(user1.userName);
+        System.out.println(user1.email);
+        System.out.println(user1.age);
+
+        System.out.println(user2.userName);
+        System.out.println(user2.age);
+        System.out.println(user2.email);
+
+        System.out.println(user3.userName);
+        System.out.println(user3.age);
+        System.out.println(user3.email);
     }
 }
