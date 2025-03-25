@@ -16,7 +16,6 @@ class bili extends janwar {
 public class Abstraction {
     public static void main(String[] args) {
         bili cat = new bili();
-
         cat.makeSound();
     }
 }
