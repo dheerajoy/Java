@@ -1,7 +1,21 @@
+class Cars {
+    String model;
+    String colour;
+
+    void drive() {
+        System.out.println("You drive the " + this.colour + " " + this.model);
+    }
+
+    Cars(String model, String colour) {
+        this.model = model;
+        this.colour = colour;
+    }
+}
+
 public class Car {
-    String company = "ford";
-    String model = "Mustang";
-    int year = 1999;
-    double price = 56000.823;
-    boolean isRunning = true;
+    public static void main(String[] args) {
+        Cars car1 = new Cars("civic", "red");
+        Cars car2 = new Cars("urus", "white");
+
+    }
 }
