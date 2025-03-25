@@ -9,6 +9,10 @@ it is a blueprint
 - it is an entity which can hold data (variable) and perform action (methods)
 - it is an instance of a class
 
+### constructor
+
+A method to initialize an objects you can pass arguments to a constructor and set up initial values
+
 ### Encapsulation
 
 - Encapsulation restricts direct access to object fields and allow modification only through methods.

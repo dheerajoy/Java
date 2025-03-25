@@ -1,5 +1,4 @@
 /*
- * 
  * Abstarction means hiding details, showing only important features
  */
 
